@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio | Student Edition</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Outfit', 'Mitr', sans-serif;
+            background-color: #f0f2f5;
+            color: #1a1a1b;
+        }
+        .bento-card {
+            background: white;
+            border-radius: 24px;
+            padding: 24px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        .bento-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .skill-tag {
+            background: #f3f4f6;
+            padding: 6px 14px;
+            border-radius: 12px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 md:grid-rows-6 gap-4 h-auto md:h-[90vh]">
+        
+        <!-- Profile Section (Main Box) -->
+        <div class="md:col-span-2 md:row-span-3 bento-card flex flex-col justify-center items-center text-center bg-gradient-to-br from-indigo-50 to-white">
+            <div class="w-32 h-32 bg-indigo-600 rounded-full mb-6 border-4 border-white shadow-xl overflow-hidden">
+                <!-- ใส่รูปนักศึกษาตรงนี้ -->
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" alt="Avatar" class="w-full h-full object-cover">
+            </div>
+            <h1 class="text-3xl font-bold mb-2">นายสมชาย ใจดี</h1>
+            <p class="text-indigo-600 font-medium mb-4 uppercase tracking-widest text-sm">IT Student & Developer</p>
+            <p class="text-gray-500 max-w-xs">นักศึกษาชั้นปีที่ 3 ผู้หลงใหลในการเขียนโค้ดและสร้างสรรค์ประสบการณ์เว็บไซต์ที่สวยงาม</p>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="md:col-span-2 md:row-span-2 bento-card">
+            <h3 class="text-lg font-bold mb-4 flex items-center">
+                <span class="mr-2">🚀</span> ทักษะและความสามารถ
+            </h3>
+            <div class="flex flex-wrap gap-2">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">Tailwind CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Figma</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Python</span>
+            </div>
+        </div>
+
+        <!-- Bio Section -->
+        <div class="md:col-span-1 md:row-span-2 bento-card bg-indigo-600 text-white">
+            <h3 class="text-lg font-bold mb-2">ประวัติย่อ</h3>
+            <p class="text-indigo-100 text-sm leading-relaxed">
+                เริ่มต้นเขียนโปรแกรมตั้งแต่ปี 1 ปัจจุบันเน้นการพัฒนา Frontend และสนใจด้าน UI/UX Design เป็นพิเศษ
+            </p>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="md:col-span-1 md:row-span-3 bento-card">
+            <h3 class="text-lg font-bold mb-4">ช่องทางติดต่อ</h3>
+            <div class="space-y-4">
+                <a href="#" class="flex items-center p-3 rounded-xl hover:bg-gray-50 transition-colors">
+                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3">📧</div>
+                    <span class="text-sm font-medium">Email Me</span>
+                </a>
+                <a href="#" class="flex items-center p-3 rounded-xl hover:bg-gray-50 transition-colors">
+                    <div class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center mr-3">🐙</div>
+                    <span class="text-sm font-medium">GitHub</span>
+                </a>
+                <a href="#" class="flex items-center p-3 rounded-xl hover:bg-gray-50 transition-colors">
+                    <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center mr-3">📱</div>
+                    <span class="text-sm font-medium">081-XXX-XXXX</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Goal Section -->
+        <div class="md:col-span-2 md:row-span-1 bento-card flex items-center justify-between border-l-8 border-indigo-500">
+            <div>
+                <p class="text-xs text-gray-400 uppercase font-bold">Current Focus</p>
+                <p class="text-lg font-bold text-gray-700">กำลังศึกษา Full-Stack Development</p>
+            </div>
+            <div class="text-2xl">🔥</div>
+        </div>
+
+        <!-- Quote/Small Box -->
+        <div class="md:col-span-1 md:row-span-1 bento-card flex flex-col justify-center italic text-gray-400 text-sm">
+            "The best way to predict the future is to create it."
+        </div>
+
+    </div>
+
+    <footer class="mt-8 text-center text-gray-400 text-xs">
+        &copy; 2024 Somchai Jaidee. Built with ❤️ and Tailwind CSS.
+    </footer>
+
+</body>
+</html>
